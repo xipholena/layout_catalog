@@ -2,10 +2,10 @@
 
 .card {
   width: $card-width;
-  background: #fff;
+  background: $white;
   border-radius: 5px;
   padding: 13px 14px 15px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $card-border;
 
   font-size: 11px;
   transition: box-shadow 0.5s;
@@ -21,7 +21,7 @@
     transition: transform 1s;
     &:hover {
       transform: scale(1.2);
-      border-color: #f3f3f3;
+      border-color: $card-border;
     }
   }
   &__title {
@@ -63,7 +63,7 @@
   &__link {
     font-weight: bold;
     font-size: 14px;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
   
     background-color: $corporate;
@@ -78,7 +78,7 @@
     transition: background-color 1s, color 1s;
     &:hover {
       color: $corporate;
-      background-color: #fff;
+      background-color: $white;
     }
   }
   &:hover {
