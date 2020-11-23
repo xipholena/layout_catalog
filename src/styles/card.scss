@@ -2,19 +2,27 @@
 
 .card {
   width: $card-width;
-  background: #fff;
+  background: $white;
   border-radius: 5px;
-  padding: 0 14px 15px;
-  border: 1px solid #f3f3f3;
+  padding: 13px 14px 15px;
+  border: 1px solid $card-border;
 
   font-size: 11px;
   transition: box-shadow 0.5s;
   &__photo {
     width: 160px;
     height: 134px;
-    margin: 0 5px 42px;
-    padding-top: 30px;
+    margin: 0 2px 39px;
+    padding-top: 14px;
     box-sizing: content-box;
+
+    border: 3px solid transparent;
+    border-radius: 5px;
+    transition: transform 1s;
+    &:hover {
+      transform: scale(1.2);
+      border-color: $card-border;
+    }
   }
   &__title {
     font-weight: 500;
@@ -55,7 +63,7 @@
   &__link {
     font-weight: bold;
     font-size: 14px;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
   
     background-color: $corporate;
@@ -70,7 +78,7 @@
     transition: background-color 1s, color 1s;
     &:hover {
       color: $corporate;
-      background-color: #fff;
+      background-color: $white;
     }
   }
   &:hover {
