@@ -3,13 +3,12 @@
 .navbar {
   height: 100%;
   &__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    column-gap: 20px;
     height: 100%;
   }
   &__item {
-    margin-left: 20px;
-    list-style-type: none;
     white-space: nowrap;
     &:first-child {
       margin-left: 0;
